@@ -24,7 +24,6 @@ def encrypt(message, password):
 
 def decrypt(message, password):
     decrypted_message = ''
-    encrypted_message = ''
     password = math.ceil(len(message) / len(password)) * password
     for index, ch in enumerate(message):
         pass_ch = password[index]
@@ -32,5 +31,5 @@ def decrypt(message, password):
         ord_of_ch = ordinal_value[ch]
         shifted_ord_of_ch = (ord_of_ch - key) % len(alphabet)
         encrypted_ch = alphabet[shifted_ord_of_ch]
-        encrypted_message += encrypted_ch
+        decrypted_message += encrypted_ch
     return decrypted_message
