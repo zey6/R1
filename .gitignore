@@ -1,0 +1,6 @@
+/venv/
+/.pytest_cache/
+/.idea/
+/solution_cypher.py
+/.idea/*
+.DS_*
